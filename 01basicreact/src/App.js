@@ -1,8 +1,6 @@
-
-
 function App() {
   return (
-  <h1>Welcome to react| ANIK PAL</h1>
+  <h1>Welcome to react| ANIK PAL 🎉</h1>
   
   );
 }
