@@ -1,10 +1,9 @@
 import MyFn from "./myReact"
 function App() {
-
+  const userName="MR. ANIK PAL"
   return (
     <>
-  
-    <h1>React with VITE | Anik Pal</h1>
+    <h1>React with VITE |{userName}</h1>
     <MyFn/>
     </>
   )
@@ -17,6 +16,9 @@ function App() {
  *  it on in the one component.Here you can use relative element to 
  * wrap all the componentsOr you can use "<>...</>" [known as FRAGMENTS]
  * 
+ * 2.Evaluated expression-return (<h1>{username}</h1>)
+ * It is called evaluated expression because you can't write any javascript code here.
+ * You can only evaluated expression. you can only write the code which is preevaluated by the Javascript.
  */
 
 export default App
