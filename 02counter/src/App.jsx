@@ -1,6 +1,4 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
@@ -20,6 +18,7 @@ function App() {
     }
     return count;
   }
+
   return (
    <>
     <h1>REACT : Counter[0-20]</h1>
