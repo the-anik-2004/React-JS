@@ -10,7 +10,8 @@ function App() {
     >
       <div className='flex flex-wrap fixed justify-center
        inset-x-4 px-2  bottom-12 rounded-full border-2 border-black' style={{backgroundColor:"aliceblue",color:"#fff"}}>
-        <Button props="red"/>
+        
+        <button onClick={()=>{setColor('red')}} className='m-1 rounded-full flex flex-wrap bg-red-500 ' >RED</button>
         <button onClick={()=>{setColor('green')}} className='m-1 rounded-full flex flex-wrap bg-green-500 ' >GREEN</button>
         <button onClick={()=>{setColor('blue')}} className='m-1 rounded-full flex flex-wrap bg-blue-500 ' >BLUE</button>
         <button onClick={()=>{setColor('yellow')}} className='m-1 rounded-full flex flex-wrap bg-yellow-500 ' >YELLOW</button>
@@ -26,7 +27,7 @@ function App() {
   )
 }
 
-function Button(props='color'){
+function Button(color){
   return(
     <button onClick={()=>setColor(color)} className='m-1 rounded-full flex flex-wrap ' style={{backgroundColor:color}} >{color.toUpperCase()}</button>
   )
