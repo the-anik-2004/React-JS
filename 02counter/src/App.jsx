@@ -8,7 +8,7 @@ function App() {
     // callBack(inLimit(count+1));
     // callBack(inLimit(count+1));
     // callBack(inLimit(count+1));
-    //above mentioned statemenst does not increament by 4 as all the tasks send in batches 
+    //above mentioned statemenst does not increament by 4 as all the tasks send in batche 
 
     //Increment by 4
     // callBack(prevCount=>inLimit(prevCount+1));
