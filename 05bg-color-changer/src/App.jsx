@@ -21,10 +21,10 @@ function App() {
         <Button btnText='green'/>
         <Button btnText='blue'/>
         <Button btnText='olive'/>
-        <Button btnText='yellow' className="text-black"/>
+        <Button btnText='yellow' />
         <Button btnText='pink'/>
         <Button btnText='purple'/>
-        <Button btnText='lavender' className="text-gray-900"/>
+        <Button btnText='lavender' />
         <Button btnText='black'/>
         
        
