@@ -1,6 +1,5 @@
 import { useState } from 'react'
 
-
 function App() {
   const [color, setColor] = useState('#212121');
 
@@ -21,19 +20,14 @@ function App() {
         <Button btnText='green'/>
         <Button btnText='blue'/>
         <Button btnText='olive'/>
-        <Button btnText='yellow' />
+        <Button btnText='yellow'/>
         <Button btnText='pink'/>
         <Button btnText='purple'/>
         <Button btnText='lavender' />
         <Button btnText='black'/>
-        
-       
       </div>
     </div>
   )
 }
-
-
-
 
 export default App
