@@ -38,9 +38,9 @@ function InputBox({
                     >
                     
                        { 
-                        currencyOptions.map((currency) => (
-                            <option key={currency} value={currency}>
-                            {currency.toUpperCase()}
+                        currencyOptions.map((curr) => (
+                            <option key={curr} value={curr}>
+                            {curr.toUpperCase()}
                             </option>
                         ))
                        }

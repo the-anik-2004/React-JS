@@ -13,4 +13,4 @@ const useCurrencyInfo=(currency)=>{
     return data;
   }
 
-export  {useCurrencyInfo};
+export default useCurrencyInfo;

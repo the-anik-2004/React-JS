@@ -20,9 +20,10 @@ const useCurrencyInfo=(currency)=>{
 function App() {
   const BackgroundImage="https://images.unsplash.com/photo-1591033594798-33227a05780d?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Y3VycmVuY3klMjBleGNoYW5nZXxlbnwwfHwwfHx8MA%3D%3D"
   const [amount,setAmount]=useState(0);
+  const [convertedAmount,setConvertedAmount]=useState(0);
   const [from,setFrom]=useState("usd");
   const [to,setTo]=useState("inr")
-  const [convertedAmount,setConvertedAmount]=useState(0);
+
 
   const currencyInfo=useCurrencyInfo(from);
   const options= Object.keys(currencyInfo);
