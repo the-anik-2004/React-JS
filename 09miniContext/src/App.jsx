@@ -1,6 +1,7 @@
 import UserContextProvider from "./contexts/UserContextProvider"
 import Login from "./components/Login"
 import Profile from "./components/Profile"
+import './App.css'
 function App() {
   
 
@@ -8,9 +9,9 @@ function App() {
     <>
     <UserContextProvider>
       <h1>"Context API"</h1>
-      <Profile/>
-      <Login/>
       
+      <Login/>
+      <Profile/>
     </UserContextProvider>
     
     </>
