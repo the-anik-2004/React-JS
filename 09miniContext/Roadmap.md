@@ -5,3 +5,6 @@ A contextProvider is created in "./src/context/UserContextProvider.jsx" and Expo
 
 # Step-3
 Sending data by using calling setUser through context api
+
+# Step -4 
+When you need a context to execute you have to import "UserContextProvider"
