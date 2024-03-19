@@ -46,7 +46,7 @@ function TodoItem({todo}) {
             }}
             disabled={todo.checked}
         >
-            {isTodoEditable ? "📁" : "✏️"}
+            {isTodoEditable ? "🫙" : "✏️"}
         </button>
         {/* Delete Todo Button */}
         <button
