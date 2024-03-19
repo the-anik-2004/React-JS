@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 
-import './App.css'
+// import './App.css'
 import { TodoProvider } from './contexts';
 import TodoForm from './components/TodoForm';
 import TodoItem from './components/TodoItem';
@@ -14,8 +14,8 @@ const addTodo=(todoMessage)=>{
 }
 
  const updateTodo=(id,todoMessage)=>{
-  setTodos((prev)=>prev.map((prevTodo)=>prevTodo.id===id?
-  todoMessage : prevTodo))
+  setTodos((prev)=>prev.map((prevTodo)=>(prevTodo.id===id?
+  todoMessage : prevTodo)))
  }
 
  const deleteTodo=(id)=>{
@@ -29,16 +29,14 @@ const addTodo=(todoMessage)=>{
  }
 
 useEffect(()=>{
-  const todos=JSON.parse(localStorage.getItem('todos'));
-  if(todos && todos.lenght>0){
-    setTodos(todos)
-    console.log(todos.todoMsg)
-  }
+const data=JSON.parse(localStorage.getItem("todoData"));
+if(data && data.length>0){
+  setTodos(data);
+}
 },[])
 
 useEffect(()=>{
- localStorage.setItem('todos',JSON.stringify(todos));
-
+ localStorage.setItem('todoData',JSON.stringify(todos));
 },[todos]);
 
   return (
