@@ -1,25 +1,17 @@
-import React from 'react'
+import React, { useState } from 'react'
 import {useDispatch, useSelector } from 'react-redux'
-import {removeTodo} from '../features/todo/todoSlice'
+import {removeTodo, updateTodo} from '../features/todo/todoSlice'
 
 function Todos() {
     const todos=useSelector(state=>state.todos);
     const dispatch=useDispatch();
-//===========Simple way=======
-    // return (
-    //     <>
-    //     <div>Todos</div>
-    //     {todos.map((todo)=>{
-    //         <li key={todo.id}>
-    //             {todo.text}
-    //             <button onClick={()=>dispatch(removeTodo(todo.id))}>X</button>
-    //         </li>
-            
-    //     })}
-    //     </>
-    // )
+    // const [editedText, setEditedText] = useState('');
+  
+    const updateTodoHandler=(todoId)=>{
+      dispatch(updateTodo(todoId));
 
-    //============
+    }
+ 
     return (
     <>
     <div>Todos</div>
@@ -30,6 +22,14 @@ function Todos() {
             key={todo.id}
           >
             <div className='text-white'>{todo.text}</div>
+            <button
+             onClick={() => dispatch(()=>updateTodoHandler(todo.id))}
+              className="text-white bg-blue-100 border-0 py-1 px-4 focus:outline-none hover:bg-green-300 rounded text-lg"
+            >
+            ✏️
+            </button>
+
+
             <button
              onClick={() => dispatch(removeTodo(todo.id))}
               className="text-white bg-red-500 border-0 py-1 px-4 focus:outline-none hover:bg-red-600 rounded text-md"
